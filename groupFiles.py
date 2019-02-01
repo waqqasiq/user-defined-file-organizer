@@ -11,7 +11,6 @@ import pandas as pd
 path = os.getcwd()
 names = os.listdir(path)
 
-
 df = pd.read_csv('fileFolder.csv')
 
 folder_name = []
@@ -45,11 +44,9 @@ def date_time(zone='Asia/Dhaka'):
     
 date_time = date_time()  
 
-
 file = open("logfile.txt","w") 
 folder_created = []
 files_moved = []
-
 
 j=0 #Count of files moved    
 k=0 #count of folder created 
@@ -76,11 +73,9 @@ for files in names:
             files_moved.append(files)
             j+=1
     
-    
 print("Folder created: ", k)   
 print("Files moved: ", j)
 print("Check the logfile.txt for more details.")
-
 
 file.write("Folder created: \n")
 for f in folder_created:
