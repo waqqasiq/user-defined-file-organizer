@@ -12,7 +12,7 @@ path = os.getcwd()
 names = os.listdir(path)
 
 
-df = pd.read_excel('fileFolder.xlsx')
+df = pd.read_csv('fileFolder.csv')
 
 folder_name = []
 file_name = []
@@ -55,7 +55,7 @@ j=0 #Count of files moved
 k=0 #count of folder created 
 
 for files in names:
-    if ((files=="fileFolder.xlsx") | (files=="groupFiles_user_defined.py") | (files=="logfile.txt")):
+    if ((files=="fileFolder.csv") | (files=="groupFiles_user_defined.py") | (files=="logfile.txt")):
         continue
     iterator = -1
     c = 0
