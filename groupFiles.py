@@ -55,7 +55,7 @@ j=0 #Count of files moved
 k=0 #count of folder created 
 
 for files in names:
-    if ((files=="fileFolder.csv") | (files=="groupFiles_user_defined.py") | (files=="logfile.txt")):
+    if ((files=="fileFolder.csv") | (files=="groupFiles.py") | (files=="logfile.txt")):
         continue
     iterator = -1
     c = 0
