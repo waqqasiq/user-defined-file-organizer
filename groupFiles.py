@@ -67,7 +67,6 @@ for files in names:
     file_extension = files[iterator:]
 
     for i in range(len(file_name)):
-        
         if file_extension==file_name[i]:
             if not os.path.exists(path+"\\"+folder_name[i]):
                 os.makedirs(path+"\\"+folder_name[i])
